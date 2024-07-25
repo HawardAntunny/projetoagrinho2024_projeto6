@@ -85,14 +85,20 @@ main {
     text-align: center;
 }
 
-#info-image {
-    max-width: 100%;
+#info-images-top, #info-images-bottom {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+#info-images-top img, #info-images-bottom img {
+    max-width: 48%;
     height: auto;
     border-radius: 8px;
 }
 
 #info-text {
-    margin-top: 10px;
+    margin: 10px 0;
     font-size: 1.2em;
     color: #004d40; /* Verde mais escuro */
     text-align: justify;
