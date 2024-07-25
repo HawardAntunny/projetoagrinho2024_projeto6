@@ -3,30 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gestão de Recursos no Campo</title>
+    <title>Áreas Rurais de Nova Londrina</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
-        <aside class="sidebar">
-            <h1>Gestão de Recursos no Campo</h1>
-            <h2>Entenda o Ciclo Completo</h2>
-            <p>O gerenciamento eficaz dos recursos no campo é crucial para a produtividade e sustentabilidade das operações agrícolas. Desde a preparação do solo até a colheita e a gestão dos produtos, cada etapa demanda atenção especial para garantir resultados ótimos. Acompanhe o ciclo completo e descubra como cada fase contribui para o sucesso agrícola.</p>
-        </aside>
-        <main class="main-content">
-            <div class="buttons">
-                <button class="button" data-info="preparacao">Preparação do Solo</button>
-                <button class="button" data-info="plantio">Plantio</button>
-                <button class="button" data-info="irrigacao">Irrigação</button>
-                <button class="button" data-info="monitoramento">Monitoramento</button>
-                <button class="button" data-info="colheita">Colheita</button>
-            </div>
+        <div class="left-section">
+            <h1>Descubra as Áreas Rurais de Nova Londrina</h1>
+            <h2>Uma Jornada pelas Belezas e Tradições do Interior</h2>
+            <p>Nova Londrina, localizada no interior do Paraná, é uma cidade rica em tradições rurais e belezas naturais. Com uma economia fortemente baseada na agricultura e pecuária, a cidade oferece uma visão fascinante sobre a vida no campo. Explore suas áreas rurais e descubra o que torna esta região tão especial.</p>
+        </div>
+
+        <div class="center-section">
+            <button onclick="showContent('agricultura')">Agricultura</button>
+            <button onclick="showContent('pecuaria')">Pecuária</button>
+            <button onclick="showContent('artesanato')">Artesanato</button>
+            <button onclick="showContent('eventos')">Eventos Locais</button>
+            <button onclick="showContent('turismo')">Turismo Rural</button>
+        </div>
+
+        <div class="right-section">
             <div id="info">
-                <img id="info-image" src="img/preparacao.jpeg" alt="Preparação do Solo">
-                <p id="info-text">Texto informativo sobre a preparação do solo.</p>
+                <img id="info-image" src="img/plantio.jpeg" alt="Imagem de Agricultura">
+                <p id="info-text">A agricultura em Nova Londrina é uma parte vital da economia local. Os produtores trabalham em diversas culturas, desde grãos até hortaliças. As práticas agrícolas aqui são conhecidas por sua sustentabilidade e inovação.</p>
             </div>
-        </main>
+        </div>
     </div>
-    <script src="scripts.js"></script>
+
+    <script src="script.js"></script>
 </body>
 </html>

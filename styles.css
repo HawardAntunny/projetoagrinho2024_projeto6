@@ -1,10 +1,8 @@
-/* styles.css */
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #e0f7fa; /* Cor de fundo azul claro */
+    background-color: #e0f0e9; /* Fundo verde claro */
 }
 
 .container {
@@ -12,58 +10,61 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+    background-color: #fff; /* Fundo branco para o conteúdo */
 }
 
-.sidebar {
+.left-section {
     flex: 1;
-    background-color: #004d40; /* Verde escuro */
-    color: #ffffff;
     padding: 20px;
-    border-radius: 8px;
 }
 
-.sidebar h1 {
+.left-section h1 {
     font-size: 2.5em;
+    color: #004d00; /* Verde escuro */
     margin-bottom: 10px;
 }
 
-.sidebar h2 {
-    font-size: 1.8em;
-    margin-bottom: 15px;
-}
-
-.sidebar p {
-    font-size: 1.1em;
-    line-height: 1.6;
-}
-
-.main-content {
-    flex: 2;
-    display: flex;
-    flex-direction: column;
-}
-
-.buttons {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+.left-section h2 {
+    font-size: 1.5em;
+    color: #007700; /* Verde mais claro */
     margin-bottom: 20px;
 }
 
-.button {
-    background-color: #ffab00; /* Laranja claro */
-    color: #ffffff;
-    border: none;
-    border-radius: 8px;
-    padding: 15px;
+.left-section p {
     font-size: 1.1em;
-    font-weight: bold;
+    color: #333;
+}
+
+.center-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+}
+
+.center-section button {
+    background-color: #ffb84d; /* Laranja claro */
+    border: none;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 1.2em;
+    font-weight: bold; /* Letra mais gordinha */
+    border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
-.button:hover {
-    background-color: #ff6f00; /* Laranja mais escuro */
+.center-section button:hover {
+    background-color: #ff9900; /* Laranja mais escuro */
+}
+
+.right-section {
+    flex: 2;
+    padding: 20px;
 }
 
 #info {
@@ -74,10 +75,10 @@ body {
     max-width: 100%;
     height: auto;
     border-radius: 8px;
-    margin-bottom: 15px;
 }
 
 #info-text {
-    font-size: 1.2em;
-    color: #004d40; /* Verde escuro */
+    margin-top: 15px;
+    font-size: 1.1em;
+    color: #333;
 }
