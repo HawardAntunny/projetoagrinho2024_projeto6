@@ -1,0 +1,83 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e0f7fa; /* Cor de fundo azul claro */
+}
+
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.sidebar {
+    flex: 1;
+    background-color: #004d40; /* Verde escuro */
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.sidebar h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.sidebar h2 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+
+.sidebar p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+.main-content {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.button {
+    background-color: #ffab00; /* Laranja claro */
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    padding: 15px;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #ff6f00; /* Laranja mais escuro */
+}
+
+#info {
+    text-align: center;
+}
+
+#info-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+#info-text {
+    font-size: 1.2em;
+    color: #004d40; /* Verde escuro */
+}
