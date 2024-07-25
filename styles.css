@@ -2,68 +2,81 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #e0f0e9; /* Fundo verde claro */
+    background-color: #e0f2f1; /* Verde água claro */
 }
 
 .container {
     display: flex;
+    flex-direction: row;
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
-    background-color: #fff; /* Fundo branco para o conteúdo */
 }
 
-.left-section {
-    flex: 1;
-    padding: 20px;
-}
-
-.left-section h1 {
-    font-size: 2.5em;
-    color: #004d00; /* Verde escuro */
-    margin-bottom: 10px;
-}
-
-.left-section h2 {
-    font-size: 1.5em;
-    color: #007700; /* Verde mais claro */
+header {
+    text-align: center;
     margin-bottom: 20px;
 }
 
-.left-section p {
-    font-size: 1.1em;
-    color: #333;
-    text-align: justify; /* Texto justificado */
+header h1 {
+    font-size: 2.5em;
+    color: #00796b; /* Verde escuro */
+    font-family: 'Georgia', serif;
 }
 
-.center-section {
-    flex: 1;
+header p {
+    color: #004d40; /* Verde mais escuro */
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+main {
     display: flex;
-    flex-direction: column;
-    gap: 10px;
+    width: 100%;
+    gap: 20px;
+}
+
+.left {
+    flex: 1;
+    padding: 20px;
+    background-color: #004d40; /* Verde escuro */
+    color: #ffffff;
+    border-radius: 8px;
+}
+
+.left h2 {
+    font-size: 2em;
+}
+
+.left p {
+    text-align: justify;
+}
+
+.center {
+    flex: 0 0 200px;
     padding: 20px;
 }
 
-.center-section button {
-    background-color: #ffb84d; /* Laranja claro */
-    border: none;
-    color: #fff;
-    padding: 15px;
-    text-align: center;
-    text-decoration: none;
+.center button {
     display: block;
-    font-size: 1.2em;
-    font-weight: bold; /* Letra mais gordinha */
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #ffcc80; /* Laranja claro */
+    border: none;
     border-radius: 5px;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #000000;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
-.center-section button:hover {
-    background-color: #ff9900; /* Laranja mais escuro */
+.center button:hover {
+    background-color: #ffb74d; /* Laranja mais escuro */
 }
 
-.right-section {
+.right {
     flex: 2;
     padding: 20px;
 }
@@ -79,8 +92,8 @@ body {
 }
 
 #info-text {
-    margin-top: 15px;
-    font-size: 1.1em;
-    color: #333;
-    text-align: justify; /* Texto justificado */
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #004d40; /* Verde mais escuro */
+    text-align: justify;
 }

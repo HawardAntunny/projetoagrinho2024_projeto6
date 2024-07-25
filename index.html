@@ -3,33 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Áreas Rurais de Nova Londrina</title>
+    <title>Áreas Rurais do Paraná</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
-        <div class="left-section">
-            <h1>Descubra as Áreas Rurais de Nova Londrina</h1>
-            <h2>Uma Jornada pelas Belezas e Tradições do Interior</h2>
-            <p>Nova Londrina, localizada no interior do Paraná, é uma cidade rica em tradições rurais e belezas naturais. Com uma economia fortemente baseada na agricultura e pecuária, a cidade oferece uma visão fascinante sobre a vida no campo. Explore suas áreas rurais e descubra o que torna esta região tão especial.</p>
-        </div>
+        <header>
+            <h1>Áreas Rurais do Paraná</h1>
+            <p>Explorando a rica diversidade das áreas rurais e a vida no campo no estado do Paraná.</p>
+        </header>
 
-        <div class="center-section">
-            <button onclick="showContent('agricultura')">Agricultura</button>
-            <button onclick="showContent('pecuaria')">Pecuária</button>
-            <button onclick="showContent('artesanato')">Artesanato</button>
-            <button onclick="showContent('eventos')">Eventos Locais</button>
-            <button onclick="showContent('turismo')">Turismo Rural</button>
-        </div>
-
-        <div class="right-section">
-            <div id="info">
-                <img id="info-image" src="img/plantio.jpeg" alt="Imagem de Agricultura">
-                <p id="info-text">A agricultura em Nova Londrina é uma parte vital da economia local. Os produtores trabalham em diversas culturas, desde grãos até hortaliças. As práticas agrícolas aqui são conhecidas por sua sustentabilidade e inovação.</p>
+        <main>
+            <div class="left">
+                <h2>Áreas Rurais do Paraná</h2>
+                <p>
+                    O estado do Paraná é conhecido por sua rica diversidade de áreas rurais, que variam desde vastas plantações
+                    de grãos até pequenas propriedades familiares. Essas áreas são fundamentais para a economia local, proporcionando
+                    alimentos e produtos para o mercado. Cada região tem suas particularidades e contribui para o panorama agrícola
+                    e rural do estado. Vamos explorar algumas das principais áreas rurais do Paraná e conhecer mais sobre suas
+                    características e importância.
+                </p>
             </div>
-        </div>
-    </div>
 
-    <script src="scripts.js"></script>
+            <div class="center">
+                <button onclick="showInfo('campo_mourao')">Campo Mourão</button>
+                <button onclick="showInfo('palmeira')">Palmeira</button>
+                <button onclick="showInfo('cascavel')">Cascavel</button>
+                <button onclick="showInfo('londrina')">Londrina</button>
+                <button onclick="showInfo('toledo')">Toledo</button>
+            </div>
+
+            <div class="right">
+                <div id="info">
+                    <img id="info-image" src="" alt="Imagem da área rural">
+                    <p id="info-text">Selecione uma área rural para ver mais informações.</p>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
