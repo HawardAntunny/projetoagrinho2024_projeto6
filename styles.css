@@ -33,6 +33,7 @@ body {
 .left-section p {
     font-size: 1.1em;
     color: #333;
+    text-align: justify; /* Texto justificado */
 }
 
 .center-section {
@@ -81,4 +82,5 @@ body {
     margin-top: 15px;
     font-size: 1.1em;
     color: #333;
+    text-align: justify; /* Texto justificado */
 }
